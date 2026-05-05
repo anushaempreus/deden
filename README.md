@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+```markdown
+# Deden Finance & Mentoring — Website
+
+Official website for [Deden Finance and Mentoring](https://deden.com.au), a values-based financial services firm based in Manuka, Canberra. Built with Next.js 15, TypeScript and Tailwind CSS.
+
+## Tech Stack
+
+- **Framework** — Next.js 15 (App Router)
+- **Language** — TypeScript
+- **Styling** — Tailwind CSS v4 + inline styles
+- **Fonts** — Instrument Serif (headings) + Inter (body) via Google Fonts
+- **Email** — Nodemailer with Microsoft 365 SMTP
+- **Deployment** — Vercel
+
+## Pages
+
+| Route | Description |
+|---|---|
+| `/` | Home — hero, services overview, testimonials |
+| `/services` | Full services list |
+| `/work-with-us` | Process, FAQ, why Deden |
+| `/about` | Story, values, timeline, team |
+| `/praise` | Client testimonials |
+| `/contact` | Contact form + office info |
+| `/blog` | Articles with category filter |
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+├── page.tsx              # Home
+├── services/page.tsx
+├── work-with-us/page.tsx
+├── about/page.tsx
+├── praise/page.tsx
+├── contact/page.tsx
+├── blog/page.tsx
+├── globals.css
+└── layout.tsx
+components/
+├── Navbar.tsx
+└── Footer.tsx
+```
 
-## Learn More
+## Design System
 
-To learn more about Next.js, take a look at the following resources:
+- **Primary colour** — Orange `#e8931a`
+- **Backgrounds** — Cream `#fdf9f4`, Soft `#f9f6f2`, White `#ffffff`, Ink `#0f0f0f`
+- **Headings** — Instrument Serif, italic orange accents
+- **Body** — Inter, weight 300–600
+- **Buttons** — Pill shape (`border-radius: 40px`)
+- **Cards** — Rounded (`border-radius: 20px`), `#ede8e0` border
+- **Hero** — Animated floating orbs + dot grid background
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deployed on Vercel. Push to `main` to trigger a deployment.
 
-## Deploy on Vercel
+```bash
+git add .
+git commit -m "your message"
+git push origin main
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Deden Finance and Mentoring · Manuka, ACT 2603 · Australian Credit Licence holder*
+```
