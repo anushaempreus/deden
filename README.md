@@ -1,5 +1,5 @@
 ```markdown
-# Deden Finance & Mentoring
+## Deden Finance & Mentoring
 
 Website for Deden Finance and Mentoring, Manuka, Canberra.
 
