@@ -1,5 +1,4 @@
-```markdown
-## Deden Finance & Mentoring
+# Deden Finance & Mentoring
 
 Website for Deden Finance and Mentoring, Manuka, Canberra.
 
@@ -30,5 +29,4 @@ Push to `main` — Vercel auto-deploys.
 git add .
 git commit -m "message"
 git push origin main
-```
 ```
